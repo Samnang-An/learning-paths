@@ -1,0 +1,50 @@
+{
+  "requestUrl": "/delegate/courses",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": {
+    "total": 26,
+    "items": [
+      {
+        "id": 20195,
+        "title": "Global"
+      },
+      {
+        "id": 27432,
+        "title": "asdasda"
+      },
+      {
+        "id": 37651,
+        "title": "course for notification"
+      },
+      {
+        "id": 22127,
+        "title": "DSS Team"
+      },
+      {
+        "id": 20182,
+        "title": "Liferay"
+      },
+      {
+        "id": 41709,
+        "title": "iOS Development"
+      },
+      {
+        "id": 28584,
+        "title": "Lev"
+      },
+      {
+        "id": 29155,
+        "title": "Maura's course"
+      },
+      {
+        "id": 38305,
+        "title": "new course"
+      },
+      {
+        "id": 24986,
+        "title": "Onboarding"
+      }
+    ]
+  }
+}

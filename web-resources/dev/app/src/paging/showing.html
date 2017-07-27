@@ -1,0 +1,14 @@
+<span class="show-items-buttons">
+    {{#isShowingAll}}
+        <a class="js-show-page-items">{{language.showLabel}} {{itemsOnPage}} {{language.perPageLabel}}</a>
+    {{/isShowingAll}}
+
+    {{^isShowingAll}}
+        <span>{{language.showingLabel}} {{startElementNumber}} - {{endElementNumber}} {{language.ofLabel}}
+            {{totalElements}}
+        </span>
+        {{#allowShowAll}}
+            <a class="js-show-all-items">{{language.showAllLabel}}</a>
+        {{/allowShowAll}}
+    {{/isShowingAll}}
+</span>

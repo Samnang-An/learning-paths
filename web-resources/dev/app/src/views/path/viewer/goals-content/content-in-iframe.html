@@ -1,0 +1,16 @@
+<div class="loading-container js-loading"></div>
+<iframe></iframe>
+
+{{#isLesson}}
+<div class="goal-hint hidden js-scorm-lesson-hint">
+    {{language.completeSCORMHint1Label}}
+    <a class="label-with-action" href="{{lessonUrl}}" target="_blank">{{language.completeSCORMHint2Label}}</a>
+</div>
+
+<!--the button with this id is needed for timer in valamis packages-->
+<button id="SCORMNavigationExit" class="hidden js-player-navigation-exit"></button>
+<div class="goal-hint hidden js-lesson-timeout">
+    {{language.lessonTimeoutLabel}}
+</div>
+<div class="goal-hint hidden js-failed-message"></div>
+{{/isLesson}}

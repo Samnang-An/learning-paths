@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN"
+        "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
+<liferay-portlet-app>
+
+    <portlet>
+        <portlet-name>LearningPaths</portlet-name>
+
+        <icon>/img/logo.png</icon>
+        <indexer-class>com.arcusys.valamis.learningpath.asset.LPIndexer</indexer-class>
+
+        <scheduler-entry>
+            <scheduler-description>scheduler entry</scheduler-description>
+            <scheduler-event-listener-class>com.arcusys.valamis.learningpath.listeners.CertificateShedulerListener</scheduler-event-listener-class>
+            <trigger>
+                <cron>
+                    <cron-trigger-value>0 0 16 * * ?</cron-trigger-value>
+                </cron>
+            </trigger>
+        </scheduler-entry>
+
+        <scheduler-entry>
+            <scheduler-description>deadline checker</scheduler-description>
+            <scheduler-event-listener-class>com.arcusys.valamis.learningpath.schedulers.DeadlineScheduler</scheduler-event-listener-class>
+            <trigger>
+                <simple>
+                    <simple-trigger-value>30</simple-trigger-value>
+                    <time-unit>minute</time-unit>
+                    <!-- time unit can be "day","hour", "minute", "second", or "week"-->
+                </simple>
+            </trigger>
+        </scheduler-entry>
+
+        <social-activity-interpreter-class>com.arcusys.valamis.learningpath.interpreter.CertificateActivityInterpreter</social-activity-interpreter-class>
+        <user-notification-definitions>notification/definitions.xml</user-notification-definitions>
+        <user-notification-handler-class>com.arcusys.valamis.learningpath.handler.CertificateNotificationHandler</user-notification-handler-class>
+
+        <asset-renderer-factory>com.arcusys.valamis.learningpath.asset.LPAssetRendererFactory</asset-renderer-factory>
+
+        <show-portlet-access-denied>false</show-portlet-access-denied>
+
+        <requires-namespaced-parameters>false</requires-namespaced-parameters>
+        <ajaxable>false</ajaxable>
+
+        {{header-portlet-javascript}}
+
+        {{footer-portlet-css}}
+        <footer-portlet-css>/css/learning-paths.css</footer-portlet-css>
+        <footer-portlet-javascript>https://backpack.openbadges.org/issuer.js</footer-portlet-javascript>
+
+        <css-class-wrapper>valamis</css-class-wrapper>
+
+        <add-default-resource>true</add-default-resource>
+    </portlet>
+
+    <role-mapper>
+        <role-name>administrator</role-name>
+        <role-link>Administrator</role-link>
+    </role-mapper>
+    <role-mapper>
+        <role-name>guest</role-name>
+        <role-link>Guest</role-link>
+    </role-mapper>
+    <role-mapper>
+        <role-name>power-user</role-name>
+        <role-link>Power User</role-link>
+    </role-mapper>
+    <role-mapper>
+        <role-name>user</role-name>
+        <role-link>User</role-link>
+    </role-mapper>
+</liferay-portlet-app>

@@ -1,0 +1,50 @@
+<div class="paginator-showing"></div>
+<div class="pagination-group">
+    <ul>
+        {{#isPrevVisible}}
+        <li>
+            <button class="button medium neutral js-paginator-previous-page">{{language.previousLabel}}
+            </button>
+        </li>
+        {{/isPrevVisible}}
+
+        {{#leftDots}}
+        {{#firstPage}}
+        <li class="full-view">
+            <button class="button medium neutral
+                {{#isActive}} active-page{{/isActive}}
+                js-paginator-change-page" data-id="{{page}}">{{page}}
+            </button>
+        </li>
+        {{/firstPage}}
+        <li class="full-view">...</li>
+        {{/leftDots}}
+
+        {{#navbuttons}}
+        <li class="full-view">
+            <button class="button medium neutral
+                {{#isActive}} active-page{{/isActive}}
+                js-paginator-change-page" data-id="{{page}}">{{page}}
+            </button>
+        </li>
+        {{/navbuttons}}
+
+        {{#rightDots}}
+        <li class="full-view">...</li>
+        {{#lastPage}}
+        <li class="full-view">
+            <button class="button medium neutral
+                {{#isActive}} active-page{{/isActive}}
+                js-paginator-change-page" data-id="{{page}}">{{page}}
+            </button>
+        </li>
+        {{/lastPage}}
+        {{/rightDots}}
+
+        {{#isNextVisible}}
+        <li>
+            <button class="button medium neutral js-paginator-next-page">{{language.nextLabel}}</button>
+        </li>
+        {{/isNextVisible}}
+    </ul>
+</div>

@@ -1,0 +1,18 @@
+{
+  "requestUrl": "/delegate/learning-paths/1",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": {
+    "id": 1,
+    "title": "Updated Certificate with Course Goals",
+    "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum. Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+    "isActive": false,
+    "courseId": 23,
+    "validPeriod": "P50D",
+    "expiringPeriod": "P10D",
+    "openBadgesEnabled": true,
+    "openBadgesDescription": "obd",
+    "createdDate": "2017-01-31T07:05:52Z",
+    "modifiedDate": "2017-01-31T07:05:52Z"
+  }
+}

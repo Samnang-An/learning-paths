@@ -1,0 +1,154 @@
+{
+  "requestUrl": "/delegate/learning-paths/1/draft/goals/tree",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": [
+    {
+      "id": 13,
+      "indexNumber": 0,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:15Z",
+      "activityName": "com.liferay.portlet.documentlibrary.model.DLFileEntry",
+      "count": 1,
+      "goalType": "activity"
+    },
+    {
+      "id": 12,
+      "indexNumber": 0,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:15Z",
+      "activityName": "com.liferay.portlet.wiki.model.WikiPage",
+      "count": 1,
+      "goalType": "activity"
+    },
+    {
+      "id": 16,
+      "indexNumber": 0,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:15Z",
+      "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+      "count": 1,
+      "goalType": "activity"
+    },
+    {
+      "id": 15,
+      "indexNumber": 0,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:15Z",
+      "activityName": "com.liferay.portlet.bookmarks.model.BookmarksEntry",
+      "count": 1,
+      "goalType": "activity"
+    },
+    {
+      "id": 14,
+      "indexNumber": 0,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:15Z",
+      "activityName": "com.liferay.portlet.messageboards.model.MBMessage",
+      "count": 1,
+      "goalType": "activity"
+    },
+    {
+      "id": 17,
+      "indexNumber": 5,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:17:19Z",
+      "title": "New group",
+      "count": 5,
+      "goals": [
+        {
+          "id": 20,
+          "groupId": 17,
+          "indexNumber": 0,
+          "optional": true,
+          "modifiedDate": "2017-03-01T16:33:55Z",
+          "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+          "count": 1,
+          "goalType": "activity"
+        },
+        {
+          "id": 21,
+          "groupId": 17,
+          "indexNumber": 1,
+          "optional": true,
+          "modifiedDate": "2017-03-01T16:34:17Z",
+          "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+          "count": 2,
+          "goalType": "activity"
+        },
+        {
+          "id": 27,
+          "groupId": 17,
+          "indexNumber": 2,
+          "optional": false,
+          "modifiedDate": "2017-03-01T16:55:31Z",
+          "title": "Sub group",
+          "goals": [
+            {
+              "id": 30,
+              "groupId": 27,
+              "indexNumber": 0,
+              "optional": false,
+              "modifiedDate": "2017-03-01T16:56:42Z",
+              "activityName": "participation",
+              "count": 1,
+              "goalType": "activity"
+            },
+            {
+              "id": 31,
+              "groupId": 27,
+              "indexNumber": 1,
+              "optional": false,
+              "modifiedDate": "2017-03-01T16:56:48Z",
+              "activityName": "contribution",
+              "count": 1,
+              "goalType": "activity"
+            }
+          ],
+          "goalType": "group"
+        }
+      ],
+      "goalType": "group"
+    },
+    {
+      "id": 22,
+      "indexNumber": 6,
+      "optional": false,
+      "modifiedDate": "2017-03-01T16:34:50Z",
+      "title": "New group",
+      "goals": [
+        {
+          "id": 23,
+          "groupId": 22,
+          "indexNumber": 0,
+          "optional": true,
+          "modifiedDate": "2017-03-01T16:35:04Z",
+          "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+          "count": 2,
+          "goalType": "activity"
+        },
+        {
+          "id": 24,
+          "groupId": 22,
+          "indexNumber": 1,
+          "optional": true,
+          "modifiedDate": "2017-03-01T16:35:11Z",
+          "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+          "count": 3,
+          "goalType": "activity"
+        },
+        {
+          "id": 25,
+          "groupId": 22,
+          "indexNumber": 2,
+          "optional": true,
+          "modifiedDate": "2017-03-01T16:35:16Z",
+          "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+          "count": 5,
+          "goalType": "activity"
+        }
+      ],
+      "goalType": "group"
+    }
+  ]
+}

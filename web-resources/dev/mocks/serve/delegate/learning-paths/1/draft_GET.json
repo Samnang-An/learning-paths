@@ -1,0 +1,18 @@
+{
+  "requestUrl": "/delegate/learning-paths/1/draft?courseId=21289",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": {
+    "id": 1,
+    "title": "Draft Certificate with Course Goals",
+    "description": "Draft description",
+    "isActive": false,
+    "courseId": 23,
+    "validPeriod": "P50D",
+    "expiringPeriod": "P10D",
+    "openBadgesEnabled": true,
+    "openBadgesDescription": "obd",
+    "createdDate": "2017-01-31T07:05:52Z",
+    "modifiedDate": "2017-01-31T07:05:52Z"
+  }
+}

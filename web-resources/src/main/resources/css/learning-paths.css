@@ -1,0 +1,817 @@
+#learningPathsAppRegion .list .tile .tile-content > button {
+  right: 50px;
+  top: 50%;
+  margin-top: -17px;
+  position: absolute;
+}
+
+#learningPathsAppRegion .tiles .tile .tile-content > button {
+  left: 10px;
+  top: 10px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#learningPathsAppRegion .tiles .tile .tile-content:hover > .button {
+  display: inline-block;
+}
+
+#learningPathsAppRegion .preview-wrapper {
+  padding: 0 30px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group {
+  padding: 24px 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group:last-child {
+  border-bottom: none;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group.path-goals {
+  padding-bottom: 0;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group input.simple, #learningPathsAppRegion .preview-wrapper .preview-group textarea.simple {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group input.simple:not(:focus):not(:hover), #learningPathsAppRegion .preview-wrapper .preview-group textarea.simple:not(:focus):not(:hover) {
+  border-color: transparent;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group input.simple:focus, #learningPathsAppRegion .preview-wrapper .preview-group textarea.simple:focus {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .div-row {
+  border: none;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .div-row:first-child .div-col {
+  padding-top: 0;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .div-row:last-child .div-col {
+  padding-bottom: 0;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .name-col {
+  width: 280px;
+  font-size: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .content-col {
+  padding-right: 0;
+  padding-left: 32px;
+  width: initial;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .val-img-logo {
+  cursor: auto;
+  width: 280px;
+  max-width: 280px;
+  height: 190px;
+  max-height: 190px;
+  margin: 0;
+  object-fit: cover;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .val-img-logo[src=""] {
+  background-size: 200px;
+  background-color: #f8f8f8;
+  background-position: top;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .logo-action-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .logo-action-buttons .button, #learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .scope-action-buttons .button {
+  margin: 0;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .logo-action-buttons .button:not(:first-child), #learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .scope-action-buttons .button:not(:first-child) {
+  margin-left: 10px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group .val-info-table .path-action-buttons {
+  padding-top: 36px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group.description-preview {
+  font-size: 15px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group.description-preview textarea {
+  font-size: 15px;
+}
+
+#learningPathsAppRegion .preview-wrapper .preview-group#pathExtInfo {
+  line-height: 21px;
+}
+
+#learningPathsAppRegion .preview-wrapper .header {
+  font-size: 24px;
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+
+#learningPathsAppRegion .preview-wrapper .header input {
+  height: auto;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#learningPathsAppRegion .preview-wrapper .subheader {
+  font-size: 15px;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select {
+  padding-top: 10px;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select .dropdown {
+  display: inline-block;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select .dropdown .dropdown-menu {
+  min-width: 200px;
+  max-height: 450px;
+  left: 0;
+  transform: none;
+  overflow: scroll;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select .dropdown .dropdown-menu .val-search {
+  margin: 8px;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select .dropdown .add-skills {
+  border: none;
+  color: #2974A6;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#learningPathsAppRegion .preview-wrapper .skills-select .selected-skill {
+  white-space: nowrap;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#learningPathsAppRegion .user-progress .val-table {
+  margin-bottom: 24px;
+}
+
+#learningPathsAppRegion .user-progress .val-table td:first-child {
+  padding-left: 30px;
+}
+
+#learningPathsAppRegion .user-progress .val-table td:last-child {
+  padding-right: 30px;
+}
+
+#learningPathsAppRegion .members-list .path-progress, #learningPathsAppRegion .user-progress .path-progress {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#learningPathsAppRegion .members-list .filter-members {
+  padding: 0 10px;
+}
+
+#learningPathsAppRegion .modal-content .filters-row .dropdown-menu {
+  padding-left: 2px;
+}
+
+#learningPathsAppRegion .modal-content .nav-tabs {
+  position: absolute;
+  z-index: 1;
+}
+
+#learningPathsAppRegion .modal-content .nav-tabs li.disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+#learningPathsAppRegion .modal-content .tab-header-imitation {
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  margin: 0 60px;
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#learningPathsAppRegion .modal-content .tab-header-imitation .dropdown {
+  text-align: left;
+  line-height: 34px;
+  height: 34px;
+}
+
+#learningPathsAppRegion .target {
+  padding-top: 120px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #777777;
+}
+
+#learningPathsAppRegion .target.goals {
+  background: transparent url("../img/target_goals.svg") top no-repeat;
+  height: 200px;
+}
+
+#learningPathsAppRegion .target.members {
+  background: transparent url("../img/target_members.svg") top no-repeat;
+  height: 250px;
+}
+
+#learningPathsAppRegion .val-modal .modal-corner {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+#learningPathsAppRegion .val-modal .modal-corner .modal-close {
+  position: relative;
+  display: inline-block;
+}
+
+#learningPathsAppRegion .val-modal .bbm-modal__bottombar {
+  background: #ffffff;
+  text-align: left;
+}
+
+#learningPathsAppRegion .val-modal .bbm-modal__bottombar .button {
+  margin: 0;
+  margin-right: 10px;
+}
+
+#learningPathsAppRegion .val-modal .bbm-modal__topbar .button {
+  height: 100%;
+}
+
+#learningPathsAppRegion .val-search, #learningPathsAppRegion .display-inline-block {
+  display: inline-block;
+}
+
+#learningPathsAppRegion .paging-showing-label {
+  display: inline-block;
+}
+
+#learningPathsAppRegion .paging-showing-label .show-items-buttons {
+  margin: 0;
+}
+
+#learningPathsAppRegion .paging-show-more {
+  text-align: center;
+  padding: 16px 0;
+  /* custom */
+  margin: 0 16px;
+  border-top: 1px solid #dedede;
+}
+
+#learningPathsAppRegion .paging-show-more .show-more-button {
+  cursor: pointer;
+  font-weight: bold;
+  color: #555555;
+  display: inline-block;
+}
+
+#learningPathsAppRegion .paging-show-more [class*="val-icon-"] {
+  color: #777777;
+}
+
+#learningPathsAppRegion .users-selected-label {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#learningPathsAppRegion .label-with-action {
+  cursor: pointer;
+  color: #2974A6;
+}
+
+#learningPathsAppRegion .portraits {
+  position: relative;
+  width: 40px;
+}
+
+#learningPathsAppRegion .portraits .img-circle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 1px solid #f8f8f8;
+}
+
+#learningPathsAppRegion .portraits.group {
+  width: 60px;
+}
+
+#learningPathsAppRegion .portraits.group .img-circle:nth-child(1) {
+  z-index: 3;
+}
+
+#learningPathsAppRegion .portraits.group .img-circle:nth-child(2) {
+  left: 10px;
+  z-index: 2;
+}
+
+#learningPathsAppRegion .portraits.group .img-circle:nth-child(3) {
+  left: 20px;
+  z-index: 1;
+}
+
+#learningPathsAppRegion .val-switch input:disabled + .switch-handle {
+  opacity: 0.6;
+}
+
+#learningPathsAppRegion .cursor-move {
+  cursor: move;
+}
+
+#learningPathsAppRegion .path-goals [class^="s-"]:first-child {
+  padding-left: 0;
+}
+
+#learningPathsAppRegion .path-goals [class^="s-"]:last-child {
+  padding-right: 0;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table {
+  padding: 0;
+  font-size: 15px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-header {
+  margin-top: 12px;
+  font-size: 11px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .goal-title .input-container {
+  overflow: hidden;
+  display: block;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .goal-title .input-container input {
+  width: 100%;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .goal-title > div .val-rounded-div, #learningPathsAppRegion .path-goals .val-list-table .goal-title > div .val-rounded-icon {
+  margin: 0 4px;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .goal-title > div .val-rounded-div {
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li:not(:last-child) {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > .list-table-row .goal-title {
+  font-weight: bold;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > .list-table-row .val-rounded-div, #learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > .list-table-row .val-rounded-icon {
+  height: 25px;
+  width: 25px;
+  margin-left: 0;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > .list-table-row .val-rounded-icon:before {
+  font-size: 18px;
+  padding: 3px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li .group.goal-title {
+  font-weight: bold;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .placeholder {
+  outline: 1px dashed #4183C4;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li .list-table-row > span:first-child {
+  padding-left: 0px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li.placeholder {
+  margin-left: 0px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 28px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li.placeholder {
+  margin-left: 28px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 56px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 56px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 84px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 84px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 112px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 112px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 140px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 140px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 168px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 168px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 196px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 196px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 224px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 224px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 252px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 252px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 280px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 280px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-table-row > span:first-child {
+  padding-left: 308px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .val-list-table-body > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li.placeholder {
+  margin-left: 308px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row .val-switch {
+  margin-top: 16px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row .button {
+  margin-top: 8px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row .deadline {
+  margin-top: 8px;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row label {
+  line-height: inherit;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row .dropdown .button .dropdown-label {
+  color: #2c2c2c;
+  font-weight: normal;
+}
+
+#learningPathsAppRegion .path-goals .val-list-table .list-table-row .dropdown .button [class^="val-icon"]:before {
+  margin-left: 0;
+}
+
+#learningPathsAppRegion .edit-path-goals .subheader {
+  display: inline-block;
+  line-height: 34px;
+}
+
+#learningPathsAppRegion #learningPathsModal .bbm-modal.fullscreen {
+  max-width: none;
+  height: 100%;
+}
+
+#learningPathsAppRegion #learningPathsModal .bbm-modal.fullscreen .modal-content {
+  height: 100%;
+}
+
+#learningPathsAppRegion #learningPathsModal .bbm-modal.fullscreen .modal-content > div {
+  height: 100%;
+}
+
+#learningPathsAppRegion #learningPathsModal .bbm-modal.fullscreen .modal-content > div > div {
+  height: 100%;
+}
+
+#learningPathsAppRegion .path-viewer {
+  height: 100%;
+  min-height: 400px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar {
+  height: 100%;
+  border: none;
+  min-height: 400px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar {
+  height: 100%;
+  font-size: 15px;
+  line-height: 17px;
+  color: #2C2C2C;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .back-button {
+  font-size: 13px;
+  padding: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .back-button:before {
+  color: #aaa;
+  float: left;
+  margin-right: 5px;
+  line-height: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .header {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 0 20px;
+  word-wrap: break-word;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .val-progress-bar {
+  padding: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-list {
+  background: #F2F2F2;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div .goal-status {
+  margin-left: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 40px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 60px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 80px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 100px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 120px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 140px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 160px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 180px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 200px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div > ul > li > div .goal-status {
+  margin-left: 220px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item {
+  min-height: 30px;
+  line-height: 30px;
+  color: #555555;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal:hover {
+  color: #2C2C2C;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.active {
+  box-shadow: inset 4px 0px 0px 0px #2974A6;
+  background-color: #FAFAFA;
+  color: #2974A6;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal .goal-status {
+  border: 2px solid #D8D8D8;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.success {
+  color: #2c2c2c;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.success .goal-status {
+  border: none;
+  background: #598200;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.failed {
+  color: #2c2c2c;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.failed .goal-status {
+  border: none;
+  background: #CC4233;
+}
+
+#learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.val-icon-plus:before, #learningPathsAppRegion .path-viewer .goals-sidebar .sidebar .sidebar-item .goal.val-icon-minus:before {
+  line-height: 30px;
+  float: right;
+}
+
+#learningPathsAppRegion .path-viewer .path-toolbar {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 1px 0 0 #DEDEDE;
+  position: relative;
+}
+
+#learningPathsAppRegion .path-viewer .path-toolbar .toggle-sidebar {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+}
+
+#learningPathsAppRegion .path-viewer .path-toolbar .val-icon-exit {
+  background-color: transparent;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer {
+  height: 100%;
+  min-height: 340px;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer .lesson {
+  height: 100%;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer .loading-container {
+  height: 100%;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer iframe {
+  min-height: 340px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer .goal-hint {
+  font-size: 15px;
+  padding: 10px;
+}
+
+#learningPathsAppRegion .path-viewer .goal-viewer > div {
+  height: 100%;
+}
+
+#learningPathsAppRegion .side-layout, #learningPathsAppRegion .center-layout {
+  float: none;
+  width: 100%;
+  display: table;
+  padding: 0 20px;
+}
+
+#learningPathsAppRegion .filters-row .side-layout, #learningPathsAppRegion .filters-row .center-layout {
+  padding: 16px 20px;
+}
+
+#learningPathsAppRegion #viewToolbar .filters-row {
+  padding: 0 10px;
+}
+
+#learningPathsAppRegion #viewToolbar .filter-members .side-layout {
+  float: left;
+  width: 50%;
+}
+
+#learningPathsAppRegion .tabs-header .side-layout {
+  float: left;
+  width: 50%;
+}
+
+#learningPathsAppRegion .tabs-header .center-layout {
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.portlet[min-width~="480px"] #learningPathsAppRegion .members-search.val-search {
+  width: 376px;
+}
+
+.portlet[min-width~="480px"] #learningPathsAppRegion .side-layout {
+  float: left;
+  width: 50%;
+}
+
+.portlet[min-width~="480px"] #learningPathsAppRegion .tabs-header .center-layout {
+  overflow-x: initial;
+}
+
+.portlet[min-width~="1024px"] #learningPathsAppRegion .side-layout {
+  float: left;
+  width: 25%;
+}
+
+.portlet[min-width~="1024px"] #learningPathsAppRegion .side-layout.l-only {
+  display: table !important;
+}
+
+.portlet[min-width~="1024px"] #learningPathsAppRegion #viewToolbar .filter-members .side-layout {
+  width: 25%;
+}
+
+.portlet[min-width~="1024px"] #learningPathsAppRegion #viewToolbar .showing-row .side-layout {
+  width: 50%;
+}
+
+.portlet[min-width~="1024px"] #learningPathsAppRegion .center-layout {
+  float: left;
+  width: 50%;
+}

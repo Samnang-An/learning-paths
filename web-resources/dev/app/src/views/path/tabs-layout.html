@@ -1,0 +1,17 @@
+<div id="pathTabs" class="val-tabs js-valamis-tabs">
+    <ul class="nav-tabs clearfix js-tabs-navigation">
+        <li class="js-info" data-ref="pathInfo"><a>{{language.infoLabel}}</a></li>
+        {{#permissions.modify}}
+        <li class="" data-ref="pathMembers"><a>{{language.membersLabel}}</a></li>
+        {{/permissions.modify}}
+    </ul>
+
+    <div class="tab-content js-tabs-content">
+        <div id="pathInfo" class="tab-pane"></div>
+        <div id="pathMembers" class="tab-pane members-list"></div>
+    </div>
+</div>
+
+<div id="extLayout"></div>
+
+<div class="modal-close val-icon-exit"></div>

@@ -1,0 +1,49 @@
+{
+  "requestUrl": "/delegate/learning-paths/1/members/users/125/goals-progress",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": [
+    {
+      "userId": 20199,
+      "goalId": 30,
+      "status": "Success",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    },
+    {
+      "userId": 20199,
+      "goalId": 32,
+      "status": "Failed",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    },
+    {
+      "userId": 20199,
+      "goalId": 20,
+      "status": "Success",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    },
+    {
+      "userId": 20199,
+      "goalId": 21,
+      "status": "Failed",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    },
+    {
+      "userId": 20199,
+      "goalId": 15,
+      "status": "Success",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    },
+    {
+      "userId": 20199,
+      "goalId": 16,
+      "status": "Failed",
+      "startedDate": "2017-03-15T11:42:18Z",
+      "modifiedDate": "2017-03-15T11:42:18Z"
+    }
+  ]
+}

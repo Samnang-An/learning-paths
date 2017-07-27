@@ -1,0 +1,24 @@
+{{#isPreview}}
+{{#isMember}}
+<div class="subheader clearfix">
+    <span class="js-done-count"></span>
+    {{language.ofLabel}} {{goalsCount}} {{language.goalsAchievedLabel}}:
+</div>
+{{/isMember}}
+
+{{^isMember}}
+<div class="subheader">
+    {{language.learningGoalsLabel}}
+</div>
+{{/isMember}}
+{{/isPreview}}
+
+<div class="clearfix val-list-table-header hidden js-header">
+    <span class="s-6">{{language.goalsTitleLabel}}</span>
+    <span class="s-2">{{language.typeLabel}}</span>
+    <span class="s-2">{{language.deadlineLabel}}</span>
+    <span class="s-2">{{language.mandatoryLabel}}</span>
+</div>
+<div class="js-goals-list val-list-table-body">
+    <div class="loading-container js-loading"></div>
+</div>

@@ -1,0 +1,130 @@
+{
+  "requestUrl": "/delegate/learning-paths/1/members?memberType=users&page=1&count=10&sortAscDirection=true",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": {
+    "total": 8,
+    "items": [
+      {
+        "id": 125,
+        "name": "Joe Bloggs",
+        "userPortraits": "/image/user_male_portrait?img_id=0&img_id_token=xbA%2BF%2BokDLuoB54IwvEN%2Fz9gb%2BE%3D&t=1481201280286",
+        "groups": [
+          {
+            "id": 36308,
+            "name": "User Group 1"
+          }
+        ],
+        "roles": [
+          {
+            "id": 20126,
+            "name": "User"
+          }
+        ],
+        "organizations": [
+        ],
+        "membershipInfo": [
+          {
+            "id": 36371,
+            "tpe": 0,
+            "entityId": 31531
+          }
+        ]
+      },
+      {
+        "id": 36358,
+        "name": "User 2 Test",
+        "userPortraits": "/image/user_male_portrait?img_id=0&img_id_token=pXEtuR5MTfz20RYYUwOJdyvRgyo%3D&t=1481201280286",
+        "groups": [
+          {
+            "id": 36308,
+            "name": "User Group 1"
+          }
+        ],
+        "roles": [
+          {
+            "id": 20126,
+            "name": "User"
+          }
+        ],
+        "organizations": [
+          {
+            "id": 36388,
+            "name": "Test organization"
+          }
+        ],
+        "membershipInfo": [
+          {
+            "id": 36358,
+            "tpe": 0,
+            "entityId": 31531
+          }
+        ]
+      },
+      {
+        "id": 20164,
+        "name": "Test Test",
+        "userPortraits": "/image/user_male_portrait?img_id=0&img_id_token=BjMaTGhzr%2BpLAuePn1prNcOVPbw%3D&t=1481201280286",
+        "groups": [
+          {
+            "id": 36308,
+            "name": "User Group 1"
+          }
+        ],
+        "roles": [
+          {
+            "id": 20122,
+            "name": "Administrator"
+          },
+          {
+            "id": 20125,
+            "name": "Power User"
+          },
+          {
+            "id": 20126,
+            "name": "User"
+          }
+        ],
+        "organizations": [
+        ],
+        "membershipInfo": [
+          {
+            "id": 20164,
+            "tpe": 0,
+            "entityId": 31531
+          }
+        ]
+      },
+      {
+        "id": 36345,
+        "name": "User 1 Test",
+        "userPortraits": "/image/user_male_portrait?img_id=0&img_id_token=YmBviSI2qPmHhiqzOLW94tOFiuE%3D&t=1481201280286",
+        "groups": [
+          {
+            "id": 36308,
+            "name": "User Group 1"
+          }
+        ],
+        "roles": [
+          {
+            "id": 20126,
+            "name": "User"
+          },
+          {
+            "id": 36385,
+            "name": "Test Role"
+          }
+        ],
+        "organizations": [
+        ],
+        "membershipInfo": [
+          {
+            "id": 36345,
+            "tpe": 0,
+            "entityId": 31531
+          }
+        ]
+      }
+    ]
+  }
+}

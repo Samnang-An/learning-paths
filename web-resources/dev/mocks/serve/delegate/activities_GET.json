@@ -1,0 +1,19 @@
+{
+  "requestUrl": "/delegate/activities",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": [
+    {
+      "activityName": "com.liferay.portlet.blogs.model.BlogsEntry",
+      "title": "Blogs"
+    },
+    {
+      "activityName": "com.liferay.portlet.documentlibrary.model.DLFileEntry",
+      "title": "File Upload"
+    },
+    {
+      "activityName": "com.liferay.portlet.wiki.model.WikiPage",
+      "title": "Wiki"
+    }
+  ]
+}

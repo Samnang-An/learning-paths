@@ -1,0 +1,763 @@
+#learningPathsAppRegion {
+
+  .list {
+    .tile .tile-content > button {
+      right: 50px;
+      top: 50%;
+      margin-top: -17px;
+      position: absolute;
+    }
+  }
+
+  .tiles {
+    .tile .tile-content {
+      > button {
+        left: 10px;
+        top: 10px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+      }
+      &:hover {
+        > .button {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .preview-wrapper {
+    padding: 0 30px;
+
+    .preview-group {
+      padding: 24px 0;
+      border-bottom: 1px solid #CCCCCC;
+      &:last-child {
+        border-bottom: none;
+      }
+      &.path-goals {
+        padding-bottom: 0;
+      }
+
+      input.simple, textarea.simple {
+        padding-left: 0;
+        padding-right: 0;
+        &:not(:focus):not(:hover) {
+          border-color: transparent;
+        }
+        &:focus {
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+      }
+
+      .val-info-table {
+
+        .div-row {
+          border: none;
+        }
+        .div-row:first-child .div-col{
+          padding-top: 0;
+        }
+        .div-row:last-child .div-col{
+          padding-bottom: 0;
+        }
+
+        .name-col {
+          width: 280px;
+          font-size: 15px;
+          padding-left: 0;
+          padding-right: 0;
+          position: relative;
+
+        }
+        .content-col {
+          padding-right: 0;
+          padding-left: 32px;
+          width: initial;
+        }
+
+        .val-img-logo {
+          cursor: auto;
+
+          width: 280px;
+          max-width: 280px;
+          height: 190px;
+          max-height: 190px;
+          margin: 0;
+          object-fit: cover;
+          &[src=""] {
+            background-size: 200px;
+            background-color: #f8f8f8;
+            background-position: top;
+          }
+        }
+        .logo-action-buttons {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        .logo-action-buttons, .scope-action-buttons {
+          .button {
+            margin: 0;
+            &:not(:first-child) {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .path-action-buttons {
+          padding-top: 36px;
+        }
+      }
+
+      &.description-preview {
+        font-size: 15px;
+        textarea {
+          font-size: 15px;
+        }
+      }
+
+      &#pathExtInfo {
+        line-height: 21px;
+      }
+    }
+
+    .header {
+      font-size: 24px;
+      padding-bottom: 12px;
+      font-weight: bold;
+
+      input {
+        height: auto;
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+    .subheader {
+      font-size: 15px;
+      padding-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .skills-select {
+      padding-top: 10px;
+
+      .dropdown {
+        display: inline-block;
+
+        .dropdown-menu {
+          min-width: 200px;
+          max-height: 450px;
+          left: 0;
+          transform: none;
+          overflow: scroll;
+
+          .val-search {
+            margin: 8px;
+          }
+        }
+
+        .add-skills {
+          border: none;
+          color: #2974A6;
+          background-color: transparent;
+          font-size: 15px;
+          font-weight: normal;
+        }
+      }
+
+      .selected-skill {
+        white-space: nowrap;
+        font-weight: bold;
+        padding: 8px;
+      }
+    }
+  }
+
+  .user-progress {
+    .val-table {
+      margin-bottom: 24px;
+      td:first-child {
+        padding-left: 30px;
+      }
+      td:last-child {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .members-list, .user-progress {
+    .path-progress {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .members-list .filter-members {
+    padding: 0 10px ;
+  }
+
+  .modal-content {
+
+    .filters-row {
+      .dropdown-menu {
+        padding-left: 2px;
+      }
+    }
+
+    .nav-tabs {
+      position: absolute;
+      z-index: 1;
+
+      li.disabled {
+        pointer-events: none;
+        opacity: 0.45;
+      }
+    }
+
+    .tab-header-imitation {
+      height: 60px;
+      line-height: 60px;
+      text-align: right;
+      margin: 0 60px;
+      background-color: #F2F2F2;
+      border-bottom: 1px solid #CCCCCC;
+
+      .dropdown {
+        text-align: left;
+        line-height: 34px;
+        height: 34px;
+      }
+    }
+  }
+
+  .target {
+    padding-top: 120px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #777777;
+
+    &.goals {
+      background: transparent url("../img/target_goals.svg") top no-repeat;
+      height: 200px;
+    }
+
+    &.members {
+      background: transparent url("../img/target_members.svg") top no-repeat;
+      height: 250px;
+    }
+  }
+
+  // common styles
+  .val-modal {
+    .modal-corner {
+      top: 0;
+      right: 0;
+      position: absolute;
+      .modal-close {
+        position: relative;
+        display: inline-block;
+      }
+    }
+
+    .bbm-modal__bottombar {
+      background: #ffffff;
+      text-align: left;
+
+      .button {
+        margin: 0;
+        margin-right: 10px;
+      }
+    }
+
+    .bbm-modal__topbar .button {
+      height: 100%;
+    }
+  }
+
+  .val-search, .display-inline-block {
+    display: inline-block;
+  }
+
+  .paging-showing-label {
+    display: inline-block;
+    .show-items-buttons {
+      margin: 0;
+    }
+  }
+
+  .paging-show-more{
+    text-align: center;
+    padding: 16px 0;
+
+    /* custom */
+    margin: 0 16px;
+    border-top: 1px solid #dedede;
+
+    .show-more-button {
+      cursor: pointer;
+      font-weight: bold;
+      color: #555555;
+      display: inline-block;
+    }
+
+    [class*="val-icon-"] {
+      color: #777777;
+    }
+  }
+
+  .users-selected-label {
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .label-with-action {
+    cursor: pointer;
+    color: #2974A6;
+  }
+
+  .portraits {
+    position: relative;
+    width: 40px;
+
+    .img-circle {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      border: 1px solid #f8f8f8;
+    }
+
+    &.group {
+      width: 60px;
+
+      .img-circle {
+        &:nth-child(1) {
+          z-index: 3;
+        }
+        &:nth-child(2) {
+          left: 10px;
+          z-index: 2;
+        }
+        &:nth-child(3) {
+          left: 20px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .val-switch input:disabled + .switch-handle {
+    opacity: 0.6;
+  }
+
+  .cursor-move {
+    cursor: move;
+  }
+
+  .path-goals {
+    [class^="s-"] {
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .val-list-table {
+      padding: 0;
+      font-size: 15px;
+
+      .val-list-table-header {
+        margin-top: 12px;
+        font-size: 11px;
+      }
+
+      .goal-title {
+        .input-container {
+          overflow: hidden;
+          display: block;
+          input {
+            width: 100%;
+          }
+        }
+
+        > div {
+          .val-rounded-div, .val-rounded-icon {
+            margin: 0 4px;
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+          }
+          .val-rounded-div {
+            vertical-align: middle;
+            margin-top: -4px;
+          }
+        }
+      }
+
+      .val-list-table-body > ul > li {
+        &:not(:last-child) {
+          border-bottom: 1px solid #CCCCCC;
+        }
+        > .list-table-row {
+          .goal-title {
+            font-weight: bold;
+          }
+          .val-rounded-div, .val-rounded-icon {
+            height: 25px;
+            width: 25px;
+            margin-left: 0;
+          }
+          .val-rounded-icon:before {
+            font-size: 18px;
+            padding: 3px;
+          }
+        }
+        .group.goal-title {
+          font-weight: bold;
+        }
+      }
+
+      // sortable
+      .placeholder {
+        outline: 1px dashed #4183C4;
+      }
+
+      @mixin childPadding($depth: 0) {
+        > ul > li {
+          .list-table-row > span:first-child {
+            padding-left: $depth * 28px;
+          }
+          &.placeholder {
+            margin-left: $depth * 28px;
+          }
+          @if $depth <= 10 {
+            @include childPadding($depth + 1);
+          }
+        }
+      }
+
+      .val-list-table-body {
+        @include childPadding();
+      }
+
+      .list-table-row {
+        .val-switch {
+          margin-top: 16px;
+        }
+        .button {
+          margin-top: 8px;
+        }
+        .deadline {
+          margin-top: 8px;
+        }
+        label {
+          line-height: inherit;
+        }
+        .dropdown {
+          .button {
+            .dropdown-label {
+              color: #2c2c2c;
+              font-weight: normal;
+            }
+            [class^="val-icon"]:before {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .edit-path-goals {
+    .subheader {
+      display: inline-block;
+      line-height: 34px;
+    }
+  }
+
+  #learningPathsModal {
+    .bbm-modal.fullscreen {
+      max-width: none;
+      height: 100%;
+
+      .modal-content {
+        height: 100%;
+
+        > div {
+          height: 100%;
+
+          > div {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .path-viewer {
+    height: 100%;
+    min-height: 400px;
+
+    .goals-sidebar {
+      height: 100%;
+      border: none;
+      min-height: 400px;
+
+      .sidebar {
+        height: 100%;
+        font-size: 15px;
+        line-height: 17px;
+        color: #2C2C2C;
+
+        .back-button {
+          font-size: 13px;
+          padding: 20px;
+          line-height: 20px;
+          margin-bottom: 20px;
+
+          &:before {
+            color: #aaa;
+            float: left;
+            margin-right: 5px;
+            line-height: 20px;
+          }
+        }
+
+        .header {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 25px;
+          padding: 0 20px;
+          word-wrap: break-word;
+        }
+
+        .val-progress-bar {
+          padding: 20px;
+        }
+
+        .sidebar-list {
+          background: #F2F2F2;
+        }
+
+        @mixin sidebarItemPadding($depth: 1) {
+          > div > ul > li {
+            > div .goal-status{
+              margin-left: $depth * 20px;
+            }
+            @if $depth <= 10 {
+              @include sidebarItemPadding($depth + 1);
+            }
+          }
+        }
+        @include sidebarItemPadding();
+
+        .sidebar-item {
+          min-height: 30px;
+          line-height: 30px;
+          color: #555555;
+
+          .goal {
+            cursor: pointer;
+            padding-right: 20px;
+            &:hover {
+              color: #2C2C2C;
+            }
+            &.active {
+              box-shadow: inset 4px 0px 0px 0px #2974A6;
+              background-color: #FAFAFA;
+              color: #2974A6;
+            }
+
+            .goal-status {
+              border: 2px solid #D8D8D8;
+              display: inline-block;
+              height: 12px;
+              width: 12px;
+              border-radius: 50%;
+            }
+
+            &.success {
+              color: #2c2c2c;
+              .goal-status {
+                border: none;
+                background: #598200;
+              }
+            }
+
+            &.failed {
+              color: #2c2c2c;
+              .goal-status {
+                border: none;
+                background: #CC4233;
+              }
+            }
+
+            &.val-icon-plus,
+            &.val-icon-minus {
+              &:before {
+                line-height: 30px;
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .path-toolbar {
+      height: 60px;
+      width: 100%;
+      box-shadow: 0 1px 0 0 #DEDEDE;
+      position: relative;
+
+      .toggle-sidebar {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        padding: 20px;
+      }
+
+      .val-icon-exit {
+        background-color: transparent;
+      }
+    }
+
+    .goal-viewer {
+      height: 100%;
+      min-height: 340px;
+
+      .lesson {
+        height: 100%;
+      }
+
+      .loading-container {
+        height: 100%;
+      }
+
+      iframe {
+        min-height: 340px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        padding: 10px;
+      }
+
+      .goal-hint {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      >div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@mixin elementQuery($var1) {
+  .portlet[#{$var1}] {
+    @content;
+  }
+}
+
+@function new-element-breakpoint($item, $size){
+  $query: $item + '~="' + $size + '"';
+  @return $query;
+}
+
+$l: new-element-breakpoint(min-width, 1024px);
+$t: new-element-breakpoint(min-width, 768px);
+$m: new-element-breakpoint(min-width, 480px);
+
+#learningPathsAppRegion {
+  .side-layout, .center-layout {
+    float: none;
+    width: 100%;
+    display: table;
+    padding: 0 20px;
+  }
+
+  .filters-row {
+    .side-layout, .center-layout {
+      padding: 16px 20px;
+    }
+  }
+
+  #viewToolbar {
+    .filters-row {
+      padding: 0 10px ;
+    }
+
+    .filter-members .side-layout {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .tabs-header {
+    .side-layout {
+      float: left;
+      width: 50%;
+    }
+
+    .center-layout {
+      float: left;
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+}
+
+@include elementQuery($m) {
+  #learningPathsAppRegion {
+    .members-search.val-search {
+      width: 376px;
+    }
+
+    .side-layout {
+      float: left;
+      width: 50%;
+    }
+
+    .tabs-header .center-layout {
+      overflow-x: initial;
+    }
+  }
+}
+
+@include elementQuery($l) {
+  #learningPathsAppRegion {
+    .side-layout {
+      float: left;
+      width: 25%;
+      &.l-only {
+        display: table!important;
+      }
+    }
+
+    #viewToolbar {
+      .filter-members .side-layout {
+        width: 25%;
+      }
+
+      .showing-row .side-layout {
+        width: 50%;
+      }
+    }
+
+    .center-layout {
+      float: left;
+      width: 50%;
+    }
+  }
+}

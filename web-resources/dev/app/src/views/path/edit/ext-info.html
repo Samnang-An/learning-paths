@@ -1,0 +1,63 @@
+
+<div class="div-row">
+    <div class="div-col name-col">{{language.validPeriodLabel}}</div>
+    <div class="div-col content-col">
+        <div class="shift-left">
+            <input type="radio" id="permanentPeriod" name="validPeriod" class="val-radio" />
+            <label for="permanentPeriod" class="clearfix">
+                <span class="radio-icon"></span>
+                <span class="radio-label">{{language.permanentLabel}}</span>
+            </label>
+        </div>
+
+        <div class="shift-left">
+            <input type="radio" id="nonPermanentPeriod" name="validPeriod" class="val-radio" />
+            <label for="nonPermanentPeriod" class="clearfix">
+                <span class="radio-icon"></span>
+                <span class="radio-label">{{language.validForLabel}}</span>
+            </label>
+        </div>
+
+        <div class="js-plus-minus shift-left js-valid-period-value"></div>
+        <div class="val-select shift-left js-valid-period-type-selector">
+            <select class="js-valid-period-type">
+                {{#periodTypes}}
+                <option value="{{value}}">{{label}}</option>
+                {{/periodTypes}}
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="div-row js-expiring-block">
+    <div class="div-col name-col">{{language.expiringPeriodLabel}}</div>
+    <div class="div-col content-col">
+        <div class="js-plus-minus shift-left js-expiring-period-value"></div>
+        <div class="val-select shift-left">
+            <select class="js-expiring-period-type">
+                {{#periodTypes}}
+                <option value="{{value}}">{{label}}</option>
+                {{/periodTypes}}
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="div-row">
+    <div class="div-col name-col">{{language.openBadgesIntegrationLabel}}</div>
+    <div class="div-col content-col">
+        <label class="val-switch">
+            <input type="checkbox" id="badgesIntegration" class="switch-input"
+                   {{#openBadgesEnabled}} checked {{/openBadgesEnabled}} />
+            <span class="switch-handle"></span>
+        </label>
+    </div>
+</div>
+
+<div class="div-row js-badges-description-block">
+    <div class="div-col name-col">{{language.openBadgesDescriptionLabel}}</div>
+    <div class="div-col content-col">
+        <input type="text" class="simple js-badges-description" value="{{openBadgesDescription}}"
+               placeholder="{{language.openBadgesDescriptionHintLabel}}" />
+    </div>
+</div>

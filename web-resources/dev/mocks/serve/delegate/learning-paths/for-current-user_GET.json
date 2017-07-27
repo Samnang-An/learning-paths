@@ -1,0 +1,92 @@
+{
+  "requestUrl": "/delegate/learning-paths/for-current-user?sort=-createdDate&skip=0&take=40",
+  "contentType": "application/javascript",
+  "statusCode": 200,
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "title": "Certificate with Course Goals",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum. Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "isActive": false,
+        "published": true,
+        "validPeriod": "P50D",
+        "expiringPeriod": "P10D",
+        "openBadgesEnabled": true,
+        "openBadgesDescription": "obd",
+        "createdDate": "2017-01-31T07:05:52Z",
+        "modifiedDate": "2017-01-31T07:05:52Z",
+        "status": "InProgress"
+      },
+      {
+        "id": 2,
+        "title": "Certificate with Course Goals copy 1",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "isActive": true,
+        "validPeriod": "P1W",
+        "expiringPeriod": "P1D",
+        "openBadgesEnabled": false,
+        "createdDate": "2017-01-31T07:05:52Z",
+        "modifiedDate": "2017-01-31T07:05:52Z"
+      },
+      {
+        "id": 3,
+        "title": "Certificate with Course Goals copy 2",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "isActive": true,
+        "openBadgesEnabled": false,
+        "createdDate": "2017-01-31T07:05:52Z",
+        "modifiedDate": "2017-01-31T07:05:52Z"
+      },
+      {
+        "id": 4,
+        "title": "Certificate with Course Goals copy 3",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "isActive": true,
+        "membersCount": 3,
+        "goalsCount": 5,
+        "isMember": true,
+        "completedGoalsCount": 4,
+        "status": "success",
+        "goalsAchieved": 3
+      },
+      {
+        "id": 5,
+        "title": "Certificate with Course Goals copy 4",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "isActive": true,
+        "membersCount": 3,
+        "goalsCount": 5,
+        "isMember": true,
+        "completedGoalsCount": 5,
+        "status": "expiring",
+        "goalsAchieved": 3
+      },
+      {
+        "id": 6,
+        "title": "Certificate with Course Goals copy 5",
+        "description": "Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals Certificate with Course Goals ",
+        "isActive": true,
+        "membersCount": 3,
+        "goalsCount": 5,
+        "isMember": true,
+        "status": "failed",
+        "completedGoalsCount": 0,
+        "goalsAchieved": 3
+      },
+      {
+        "id": 7,
+        "title": "Certificate with Course Goals",
+        "description": "Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum. Lorem ipsum dolor sit amet, quis sapien ultricies eu, sed dolor vivamus pede nulla, ligula ac aliquam ligula scelerisque scelerisque, consequat sagittis id libero consectetuer. Eu nec nunc, amet eum sagittis amet fermentum justo in, pellentesque vestibulum at, magna a at risus ut vel, et libero vitae vivamus. Aliquam fames ut accumsan vel elementum.",
+        "logoUrl": "test_logo.jpg",
+        "isActive": true,
+        "membersCount": 3,
+        "goalsCount": 5,
+        "status": "expired",
+        "completedGoalsCount": 5,
+        "isMember": true
+      }
+    ],
+    "total": 7
+  }
+}

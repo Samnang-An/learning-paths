@@ -1,0 +1,84 @@
+<div class="filters-row val-row filter-members">
+    <div class="side-layout">
+        <div class="dropdown js-dropdown js-member-type" data-value="user">
+            <button class="button medium neutral">
+                <span class="dropdown-text"></span>
+                <span class="val-icon-arrow-down val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {{#membersType}}
+                <li data-value="{{value}}">{{label}}</li>
+                {{/membersType}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="side-layout hide-l">
+        {{^available}}
+        <div class="dropdown actions shift-right js-dropdown js-add-members">
+            <button class="button medium primary">
+                <span class="dropdown-text"> {{language.addMemberLabel}} </span>
+                <span class="val-icon-arrow-down-two val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {{#addMembers}}
+                <li data-value="{{value}}">{{label}}</li>
+                {{/addMembers}}
+            </ul>
+        </div>
+        {{/available}}
+    </div>
+
+    <div class="center-layout text-center">
+        <div class="members-search val-search js-search">
+            <input type="text" placeholder="{{language.membersSearchPlaceholder}}">
+        </div>
+    </div>
+
+    <div class="side-layout l-only">
+    {{^available}}
+    <div class="dropdown actions shift-right js-dropdown js-add-members">
+        <button class="button medium primary">
+            <span class="dropdown-text"> {{language.addMemberLabel}} </span>
+            <span class="val-icon-arrow-down-two val-icon-right"></span>
+        </button>
+        <ul class="dropdown-menu">
+            {{#addMembers}}
+            <li data-value="{{value}}">{{label}}</li>
+            {{/addMembers}}
+        </ul>
+    </div>
+    {{/available}}
+    </div>
+</div>
+<div class="filters-row val-row showing-row">
+    <div class="side-layout">
+        {{#available}}
+        <input type="checkbox" id="{{cid}}_selectAll" name="check" class="val-checkbox js-select-all">
+        <label class="checkbox-label" for="{{cid}}_selectAll"></label>
+        {{/available}}
+
+        <div id="viewPaginatorShowing" class="display-inline-block"></div>
+
+        {{#available}}
+        <div class="js-selected-info display-inline-block hidden">
+            <span class="users-selected-label">
+                <span class="js-selected-amount"></span> {{language.usersSelectedLabel}}
+            </span>
+            - <span class="label-with-action js-deselect-all">{{language.deselectAllLabel}}</span>
+        </div>
+        {{/available}}
+    </div>
+    <div class="side-layout text-right">
+        <div class="dropdown js-dropdown shift-right js-sort-filter" data-value="name">
+            <button class="button medium simple">
+                <span class="dropdown-text"> {{language.byNameAscLabel}} </span>
+                <span class="val-icon-arrow-down val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li data-value="name" class="selected"> {{language.byNameAscLabel}} </li>
+                <li data-value="-name"> {{language.byNameDescLabel}} </li>
+            </ul>
+        </div>
+    </div>
+</div>

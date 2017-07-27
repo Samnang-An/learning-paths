@@ -1,0 +1,41 @@
+{{#available}}
+<td class="narrow-col">
+    <input type="checkbox" id="{{cid}}_toggle_{{id}}" name="check" class="val-checkbox">
+    <label class="checkbox-label" for="{{cid}}_toggle_{{id}}"></label>
+</td>
+{{/available}}
+<td class="narrow-col">
+    <div class="portraits {{#isGroup}}group{{/isGroup}}">
+        {{#logo}}
+        <img class="img-circle" src="{{logo}}" alt="{{name}}">
+        {{/logo}}
+        {{#userPortraits}}
+        <img class="img-circle" src="{{.}}" alt="{{name}}">
+        {{/userPortraits}}
+    </div>
+</td>
+<td>
+    <div class="title">{{name}}</div>
+    <div class="info">{{{info}}}</div>
+</td>
+
+{{^available}}
+{{^isGroup}}
+<td class="narrow-col text-right">
+    {{#isInProgress}}<span class="val-label">{{language.inProgressStatusLabel}}</span>{{/isInProgress}}
+    {{#isSucceed}}<span class="val-label success">{{language.successStatusLabel}}</span>{{/isSucceed}}
+    {{#isFailed}}<span class="val-label failed">{{language.failedStatusLabel}}</span>{{/isFailed}}
+    {{#isExpired}}<span class="val-label failed">{{language.expiredStatusLabel}}</span>{{/isExpired}}
+    {{#isExpiring}}<span class="val-label inprogress">{{language.expiringStatusLabel}}</span>{{/isExpiring}}
+</td>
+<td class="narrow-col path-progress">
+    {{progressPercent}}<span class="val-percent-sign">%</span>
+</td>
+{{/isGroup}}
+
+<td class="narrow-col">
+    <button class="button medium simple danger no-text js-member-delete">
+        <span class="val-icon-trash"></span>{{language.deleteLabel}}
+    </button>
+</td>
+{{/available}}

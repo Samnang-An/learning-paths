@@ -1,0 +1,51 @@
+<div class="filters-row val-row">
+    <div class="side-layout">
+        <div class="dropdown js-dropdown js-goal-type" data-value="">
+            <button class="button medium neutral">
+                <span class="dropdown-text"></span>
+                <span class="val-icon-arrow-down val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {{#goalTypesList}}
+                <li data-value="{{value}}">{{label}}</li>
+                {{/goalTypesList}}
+            </ul>
+        </div>
+    </div>
+
+    {{^isActivity}}
+    <div class="center-layout text-center">
+        <div class="val-search js-search">
+            <input type="text" placeholder="{{language.searchLabel}}">
+        </div>
+    </div>
+    {{/isActivity}}
+</div>
+{{^isActivity}}
+<div class="filters-row val-row showing-row">
+    <div class="side-layout">
+        <input type="checkbox" id="selectAll" name="check" class="val-checkbox js-select-all">
+        <label class="checkbox-label" for="selectAll"></label>
+
+        <div id="viewPaginatorShowing" class="display-inline-block"></div>
+        <div class="hidden js-selected-info display-inline-block">
+            <span class="users-selected-label">
+                <span class="js-selected-amount"></span> {{language.itemsSelectedLabel}}
+            </span>
+            - <span class="label-with-action js-deselect-all">{{language.deselectAllLabel}}</span>
+        </div>
+    </div>
+    <div class="side-layout text-right">
+        <div class="dropdown js-dropdown shift-right js-sort" data-value="">
+            <button class="button medium simple">
+                <span class="dropdown-text"></span>
+                <span class="val-icon-arrow-down val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li data-value="title" class="selected">{{language.byNameAscLabel}}</li>
+                <li data-value="-title">{{language.byNameDescLabel}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{/isActivity}}
