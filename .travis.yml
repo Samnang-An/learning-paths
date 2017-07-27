@@ -7,7 +7,7 @@ jdk:
   - oraclejdk8
 
 dist: trusty
-script: sbt ++$TRAVIS_SCALA_VERSION clean compile test
+script: sbt ++$TRAVIS_SCALA_VERSION clean compile
 
 # Workaround for https://github.com/travis-ci/travis-ci/issues/5227
 # Buffer overflow in Java_java_net_Inet4AddressImpl_getLocalHostName
