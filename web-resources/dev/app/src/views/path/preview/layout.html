@@ -1,0 +1,43 @@
+<div class="tab-header-imitation">
+{{#permissions.modify}}
+    {{#hasDraft}}
+    <div class="display-inline valamis-info-label centered-x-block">
+        {{#published}}
+        {{language.hasInactiveChangesLabel}}
+        {{/published}}
+        {{^published}}
+        {{language.unpublishedDraftLabel}}
+        {{/published}}
+    </div>
+    {{/hasDraft}}
+
+    <button class="button medium neutral js-edit">
+        {{language.editLabel}}
+    </button>
+
+    <div class="dropdown actions display-inline-block js-dropdown">
+        <button class="button medium neutral">
+            <span class="dropdown-text">...</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="js-clone-path">{{language.cloneLabel}}</li>
+            {{#hasDraft}}
+            <li class="js-publish-path">{{language.publishLabel}}</li>
+            {{/hasDraft}}
+            {{#published}}
+            {{^activated}}
+            <li class="js-activate-path">{{language.activateLabel}}</li>
+            {{/activated}}
+            {{#activated}}
+            <li class="js-deactivate-path">{{language.deactivateLabel}}</li>
+            {{/activated}}
+            {{/published}}
+            <li class="js-delete-path">{{language.deleteLabel}}</li>
+        </ul>
+    </div>
+{{/permissions.modify}}
+</div>
+
+<div class="js-preview-info">
+    <div class="loading-container js-loading"></div>
+</div>

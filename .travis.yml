@@ -1,0 +1,18 @@
+language: scala
+
+scala:
+  - 2.11.8
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+
+dist: trusty
+script: sbt ++$TRAVIS_SCALA_VERSION clean compile
+
+# Workaround for https://github.com/travis-ci/travis-ci/issues/5227
+# Buffer overflow in Java_java_net_Inet4AddressImpl_getLocalHostName
+before_install:
+  - cat /etc/hosts # optionally check the content *before*
+  - sudo hostname "$(hostname | cut -c1-63)"
+  - sed -e "s/^\\(127\\.0\\.0\\.1.*\\)/\\1 $(hostname | cut -c1-63)/" /etc/hosts | sudo tee /etc/hosts
+  - cat /etc/hosts # optionally check the content *after*

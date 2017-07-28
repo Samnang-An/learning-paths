@@ -1,0 +1,60 @@
+<div class="tile-content with-action">
+    <div class="image certificate cursor-pointer js-open-path"
+         {{#logoUrl}}
+         style="background-image: url('{{fullLogoUrl}}')"
+         {{/logoUrl}}>
+    </div>
+    <ul>
+        <li class="title cursor-pointer js-open-path">{{title}}</li>
+        <li class="description t-hidden">{{description}}</li>
+        <li class="categories">
+            {{userMembersCount}}&nbsp;{{language.learnersLabel}} &bull;
+            {{goalsCount}}&nbsp;{{language.goalsLabel}}
+        </li>
+        <li>
+            {{^activated}}
+                <span class="val-label inactive">{{language.inactiveStatusLabel}}</span>
+            {{/activated}}
+            {{#activated}}{{#isMember}}
+                {{#isInProgress}}<span class="val-label">{{language.inProgressStatusLabel}}</span>{{/isInProgress}}
+                {{#isSucceed}}<span class="val-label success">{{language.successStatusLabel}}</span>{{/isSucceed}}
+                {{#isFailed}}<span class="val-label failed">{{language.failedStatusLabel}}</span>{{/isFailed}}
+                {{#isExpired}}<span class="val-label failed">{{language.expiredStatusLabel}}</span>{{/isExpired}}
+                {{#isExpiring}}<span class="val-label inprogress">{{language.expiringStatusLabel}}</span>{{/isExpiring}}
+            {{/isMember}}{{/activated}}
+        </li>
+    </ul>
+
+    {{#activated}}
+    {{^isMember}}
+    <button class="button medium primary js-join-path">{{language.joinLabel}}</button>
+    {{/isMember}}
+    {{/activated}}
+
+    {{#doAsAdmin}}
+    <div class="dropdown actions shift-right js-dropdown">
+        <button class="button medium neutral">
+            <span class="dropdown-text">...</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="js-open-path">{{language.openLabel}}</li>
+            {{#permissions.modify}}
+                <li class="js-clone-path">{{language.cloneLabel}}</li>
+                {{#hasDraft}}
+                <li class="js-publish-path">{{language.publishLabel}}</li>
+                {{/hasDraft}}
+                {{#published}}
+                {{^activated}}
+                <li class="js-activate-path">{{language.activateLabel}}</li>
+                {{/activated}}
+                {{#activated}}
+                <li class="js-deactivate-path">{{language.deactivateLabel}}</li>
+                {{/activated}}
+                {{/published}}
+                <li class="js-delete-path">{{language.deleteLabel}}</li>
+                <!--<li class="js-export-path">{{language.exportLabel}}</li>-->
+            {{/permissions.modify}}
+        </ul>
+    </div>
+    {{/doAsAdmin}}
+</div>

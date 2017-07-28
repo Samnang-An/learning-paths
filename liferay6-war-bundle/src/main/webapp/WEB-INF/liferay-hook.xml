@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
+
+<hook>
+    <portal-properties>portal.properties</portal-properties>
+
+    <language-properties>content/Language.properties</language-properties>
+    <language-properties>content/Language_en.properties</language-properties>
+
+    <service>
+        <service-type>com.liferay.portlet.asset.service.AssetEntryLocalService</service-type>
+        <service-impl>com.arcusys.valamis.learningpath.impl.LPAssetEntryLocalServiceWrapper</service-impl>
+    </service>
+
+    <struts-action>
+        <struts-action-path>/portal/learning-path/open</struts-action-path>
+        <struts-action-impl>com.arcusys.valamis.learningpath.strutsactions.LearningPathOpenAction</struts-action-impl>
+    </struts-action>
+</hook>

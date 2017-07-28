@@ -1,0 +1,16 @@
+<div class="filters-row val-row filter-members">
+    <div class="side-layout shift-right">
+        <div class="dropdown actions shift-right js-dropdown js-empty-add-members">
+            <button class="button medium primary">
+                <span class="dropdown-text"> {{language.addMemberLabel}} </span>
+                <span class="val-icon-arrow-down-two val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {{#addMembers}}
+                <li data-value="{{value}}">{{label}}</li>
+                {{/addMembers}}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="target members">{{language.addMembersHint1Label}}<br/>{{language.addMembersHint2Label}}</div>

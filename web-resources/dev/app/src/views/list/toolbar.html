@@ -1,0 +1,61 @@
+<div class="clearfix tabs-header">
+    <ul class="nav-tabs text-center js-paths-groups">
+        <li class="active"><a data-value="{{groups.member}}">{{language.myPathsLabel}}</a></li>
+        <li><a data-value="{{groups.notmember}}">{{language.availablePathsLabel}}</a></li>
+        {{#permissions.modify}}
+        <li><a class="js-creator" data-value="{{groups.creator}}">{{language.createdByMeLabel}}</a></li>
+        <li><a data-value="">{{language.allPathsLabel}}</a></li>
+        {{/permissions.modify}}
+    </ul>
+</div>
+<div class="val-row filters-row">
+    <div class="filter-element shift-left">
+        <div class="val-search js-search">
+            <input type="text" placeholder="{{language.searchLabel}}">
+        </div>
+    </div>
+
+    <div class="dropdown filter-element shift-left js-scope-filter js-dropdown" data-value="">
+        <button class="button medium simple">
+            <span class="dropdown-text"> {{language.instanceScopeLabel}}</span>
+            <span class="val-icon-arrow-down val-icon-right"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="selected" data-value=""> {{language.instanceScopeLabel}} </li>
+            <li data-value="{{currentCourseId}}"> {{language.currentSiteScopeLabel}} </li>
+        </ul>
+    </div>
+
+    {{#permissions.modify}}
+    <div class="filter-element shift-right">
+        <button class="button medium primary shift-right js-add-new">
+            <span class="val-icon-plus"></span>{{language.createNewLabel}}
+        </button>
+    </div>
+    {{/permissions.modify}}
+</div>
+
+<div class="val-row filters-row">
+    <div class="shift-left filter-element paging-showing-label" id="learningPathsPaginatorShowing"> </div>
+
+    <div class="dropdown filter-element shift-right js-sort-filter js-dropdown" data-value="">
+        <button class="button medium simple">
+            <span class="dropdown-text"> {{language.newestLabel}} </span><span class="val-icon-arrow-down val-icon-right"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li data-value="-createdDate"> {{language.newestLabel}} </li>
+            <li data-value="createdDate"> {{language.oldestLabel}} </li>
+            <li data-value="title"> {{language.byNameAscLabel}} </li>
+            <li data-value="-title"> {{language.byNameDescLabel}} </li>
+        </ul>
+    </div>
+
+    <div class="shift-right hide-s">
+        <button class="button medium simple no-text {{#isList}}active{{/isList}} js-display-option" data-display-mode="list">
+            <span class="val-icon-list-view">{{listViewLabel}}</span>
+        </button>
+        <button class="button medium simple no-text {{#isTiles}}active{{/isTiles}} js-display-option" data-display-mode="tiles">
+            <span class="val-icon-grid-view">{{gridViewLabel}}</span>
+        </button>
+    </div>
+</div>

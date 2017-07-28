@@ -1,0 +1,100 @@
+<div class="preview-group clearfix">
+    <div class="div-table val-info-table">
+        <div class="div-row">
+            <div class="div-col name-col image-container">
+                <img src="{{#logoUrl}}{{fullLogoUrl}}{{/logoUrl}}" class="val-img-logo certificate js-logo" />
+                <div class="logo-action-buttons">
+                    <button class="button medium neutral no-text val-icon-upload js-upload-image">
+                        {{uploadLogoLabel}}
+                    </button>
+                    <button class="button medium neutral no-text val-icon-edit js-design-new-badge">
+                        {{designNewBadge}}
+                    </button>
+                    <button class="button medium neutral no-text val-icon-trash js-delete-logo {{^logoUrl}} hidden {{/logoUrl}}">
+                        {{deleteLogoLabel}}
+                    </button>
+                </div>
+            </div>
+            <div class="div-col content-col">
+                <div class="header">
+                    <input type="text" placeholder="{{language.pathNameHintLabel}}" class="js-title simple" value="{{title}}">
+                </div>
+                <div class="scope-action-buttons">
+                    {{^activated}}
+                    <span class="val-label">{{language.inactiveStatusLabel}}</span> &bull;
+                    {{/activated}}
+
+                    <span class="js-scope-title"></span>
+
+                    <button class="button medium simple no-text val-icon-edit js-change-scope">
+                        {{changeScopeLabel}}
+                    </button>
+
+                    <button class="button medium simple danger no-text val-icon-trash js-remove-scope">
+                        {{removeScopeLabel}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="preview-group description-preview">
+    <div class="subheader">{{language.descriptionLabel}}</div>
+    <textarea class="js-description simple" rows="3"
+              placeholder="{{language.pathDescriptionHintLabel}}">{{description}}</textarea>
+
+    <div class="skills-select hidden">
+        <div class="subheader">{{language.prerequisitesLabel}}</div>
+        <div class="dropdown">
+            <div class="js-common-select">
+                <div class="js-recommendation-list"></div>
+                <button class="button add-skills js-add-prerequisites js-show-list">
+                    <span class="js-show-select-label">{{language.addSkillandLevelLabel}}</span>
+                    <span class="js-show-select-skill-label hidden">{{language.selectSkillLabel}}</span>
+                    <span class="js-show-select-level-label hidden">{{language.selectLabelLabel}}</span>
+                </button>
+                <div class="js-prerequisites js-select-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-select hidden">
+        <div class="subheader">{{language.improvementLabel}}</div>
+        <div class="dropdown">
+            <div class="js-common-select">
+                <div class="js-improving-list"></div>
+                <button class="button add-skills js-add-improving-skills js-show-list">
+                    <span class="js-show-select-label">{{language.addSkillandLevelLabel}}</span>
+                    <span class="js-show-select-skill-label hidden">{{language.selectSkillLabel}}</span>
+                    <span class="js-show-select-level-label hidden">{{language.selectLabelLabel}}</span>
+                </button>
+                <div class="js-improving-skills js-select-list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pathGoals" class="preview-group path-goals edit-path-goals">
+    <div class="clearfix">
+        <div class="subheader">{{language.learningGoalsLabel}}</div>
+
+        <div class="dropdown actions shift-right js-add-goal js-dropdown" data-value="">
+            <button class="button medium primary">
+                <span class="dropdown-text"> {{language.addLabel}} </span>
+                <span class="val-icon-arrow-down-two val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {{#goalTypesList}}
+                <li data-value="{{value}}">{{label}}</li>
+                {{/goalTypesList}}
+                <li class="js-add-group">{{language.groupAddLabel}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="js-path-goals">
+        <div class="loading-container js-loading"></div>
+    </div>
+</div>
+
+<div id="pathExtInfo" class="preview-group"></div>

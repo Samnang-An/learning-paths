@@ -1,0 +1,283 @@
+{
+  "bundleSymbolicName": "com.arcusys.valamis.learningpath.portlets",
+  "jsHeaderDependencies": [
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "jquery",
+      "path": "/js/vendor/jquery.min.js",
+      "alias": "jQuery",
+      "loader": false,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "polyfill",
+      "path": "/js/vendor/polyfills/polyfills-min.js",
+      "alias": "polyfill",
+      "loader": false,
+      "liferay6": true,
+      "liferay7": true,
+      "webpack": false
+    },
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "lodash",
+      "path": "/js/vendor/lodash.js",
+      "alias": "_",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "underscore",
+      "path": "/js/vendor/underscore.js",
+      "alias": "_",
+      "loader": true,
+      "liferay6": false,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "lodash",
+        "jquery"
+      ],
+      "anonymous": true,
+      "name": "backbone",
+      "path": "/js/vendor/backbone.js",
+      "alias": "Backbone",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "backbone"
+      ],
+      "anonymous": true,
+      "name": "backbone.radio",
+      "path": "/js/vendor/backbone.radio.js",
+      "alias": "Backbone.Radio",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "lodash",
+        "jquery",
+        "backbone",
+        "backbone.radio"
+      ],
+      "anonymous": true,
+      "name": "backbone.marionette",
+      "path": "/js/vendor/backbone.marionette.js",
+      "alias": "Marionette",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "moment",
+      "path": "/js/vendor/moment-with-locales.min.js",
+      "alias": "moment",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [],
+      "anonymous": true,
+      "name": "humanize-duration",
+      "path": "/js/vendor/humanize-duration.js",
+      "alias": "humanizeDuration",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery"
+      ],
+      "anonymous": true,
+      "name": "toastr",
+      "path": "/js/vendor/toastr.js",
+      "alias": "toastr",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery"
+      ],
+      "anonymous": true,
+      "name": "jquery-ui",
+      "path": "/js/vendor/jquery-ui.min.js",
+      "alias": "jquery-ui",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery", "jquery-ui"
+      ],
+      "anonymous": true,
+      "name": "nestedSortable",
+      "path": "/js/vendor/jquery.mjs.nestedSortable.js",
+      "alias": "nestedSortable",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "underscore",
+        "backbone"
+      ],
+      "anonymous": true,
+      "name": "backbone.service",
+      "path": "/js/valamis/backbone.service-custom.js",
+      "alias": "Backbone.Service",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "underscore",
+        "backbone"
+      ],
+      "anonymous": true,
+      "name": "backbone.modal",
+      "path": "/js/valamis/backbone.modal-min.js",
+      "alias": "Backbone.Modal",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "underscore",
+        "backbone",
+        "backbone.marionette"
+      ],
+      "anonymous": true,
+      "name": "backbone.marionette.modal",
+      "path": "/js/valamis/backbone.marionette.modals-min.js",
+      "alias": "Marionette.Modal",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery"
+      ],
+      "anonymous": true,
+      "name": "valamis-jq-plugins",
+      "path": "/js/valamis/valamis-jq-plugins.js",
+      "alias": "valamis-jq-plugins",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "backbone"
+      ],
+      "anonymous": true,
+      "name": "settingsHelper",
+      "path": "/js/valamis/settingsHelper.js",
+      "alias": "settingsHelper",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery",
+        "jquery-ui"
+      ],
+      "anonymous": true,
+      "name": "jquery.fileupload",
+      "path": "/js/valamis/jquery.fileupload.js",
+      "alias": "jquery.fileupload",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "jquery"
+      ],
+      "anonymous": true,
+      "name": "element-query",
+      "path": "/js/valamis/elementQuery.js",
+      "alias": "element-query",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": true
+    },
+    {
+      "dependencies": [
+        "backbone.marionette",
+        "element-query"
+      ],
+      "anonymous": true,
+      "name": "learning-paths",
+      "path": "/application.js",
+      "alias": "learning-paths",
+      "loader": true,
+      "liferay6": true,
+      "liferay7": false,
+      "webpack": false
+    }
+  ],
+  "jsFooterDependencies": [],
+  "cssHeaderDependencies": [],
+  "cssFooterDependencies": [
+    "/css/valamis.css",
+    "/css/backbone.modal.css",
+    "/css/backbone.modal.theme.css",
+    "/css/toastr.css"
+  ],
+  "otherResources": [
+    "/fonts/valamis-icons32.eot",
+    "/fonts/valamis-icons32.svg",
+    "/fonts/valamis-icons32.ttf",
+    "/fonts/valamis-icons32.woff",
+    "/img/loading.gif",
+    "/img/certificate_cover.svg",
+    "/img/course_cover.svg",
+    "/img/event_cover.svg",
+    "/img/lesson_cover.svg",
+    "/img/icon-import-file.svg"
+  ]
+}

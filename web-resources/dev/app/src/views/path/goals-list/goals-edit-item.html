@@ -1,0 +1,66 @@
+<div class="clearfix list-table-row">
+    <span class="s-6 goal-title {{#isGroup}}group{{/isGroup}} js-handle cursor-move">
+        <div class="ellipsis">
+            {{#isGroup}}
+                <span class="input-container">
+                    <input type="text" value="{{title}}" class="simple js-group-title" />
+                </span>
+            {{/isGroup}}
+            {{^isGroup}}
+                {{#isActivity}}
+                {{language.doLabel}} <input type="text" value="{{count}}"
+                    class="onlyDigits simple js-digits-only js-activities-count" />
+                {{/isActivity}}
+                {{title}}
+            {{/isGroup}}
+        </div>
+    </span>
+    <span class="s-2">{{goalTypeLabel}}</span>
+    <span class="s-2">
+        {{^isEvent}}
+        <span class="label-with-action js-set-deadline">{{language.toSetLabel}}</span>
+        <div class="hidden clearfix deadline js-deadline">
+            <input type="text" class="onlyDigits shift-left js-digits-only js-deadline-period-value" value="1"/>
+            <div class="val-select shift-left">
+                <select class="js-deadline-period-type">
+                    {{#periodTypes}}
+                    <option value="{{value}}">{{label}}</option>
+                    {{/periodTypes}}
+                </select>
+            </div>
+        </div>
+        {{/isEvent}}
+        {{#isEvent}} - {{/isEvent}}
+    </span>
+    <span class="s-2">
+        {{#isGroup}}
+        <div class="shift-left dropdown js-dropdown js-group-mandatory" data-value="">
+            <button class="button medium simple">
+                <span class="dropdown-label js-children-to-complete-label"></span>
+                <span class="val-icon-arrow-down-two val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item" data-value="{{toComplete.any}}">{{language.anyLabel}}
+                    <input type="text" value="{{childrenToComplete}}"
+                                  class="onlyDigits js-digits-only js-children-to-complete" />
+                </li>
+                <li class="dropdown-item" data-value="{{toComplete.custom}}">{{language.customLabel}}</li>
+            </ul>
+        </div>
+        {{/isGroup}}
+
+        {{^isGroup}}
+        <label class="val-switch shift-left js-goal-mandatory">
+            <input type="checkbox" class="switch-input" {{^optional}} checked {{/optional}} />
+            <span class="switch-handle"></span>
+        </label>
+        {{/isGroup}}
+
+        <button class="button medium simple danger no-text shift-right js-delete">
+            <span class="val-icon-trash"></span>{{language.deleteLabel}}
+        </button>
+    </span>
+</div>
+{{#isGroup}}
+<ul class="js-group-children"></ul>
+{{/isGroup}}

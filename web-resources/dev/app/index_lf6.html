@@ -1,0 +1,77 @@
+<!-- LIFERAY 6
+    before deploy to liferay 6: delete dependencies from this file, -->
+
+<!-- <<< must be deleted before included in Liferay -->
+<head>
+    <link rel="stylesheet" href="/css/valamis.css"/>
+    <link rel="stylesheet" href="/css/learning-paths.css"/>
+
+    <link rel="stylesheet" href="/css/backbone.modal.css"/>
+    <link rel="stylesheet" href="/css/backbone.modal.theme.css"/>
+    <link rel="stylesheet" href="/css/toastr.css"/>
+
+    <script type="text/javascript" src="/js/vendor/jquery.min.js" ></script>
+    <script type="text/javascript" src="/js/vendor/lodash.js" ></script>
+    <script type="text/javascript" src="/js/vendor/backbone.js" ></script>
+    <script type="text/javascript" src="/js/vendor/backbone.radio.js" ></script>
+    <script type="text/javascript" src="/js/vendor/backbone.marionette.js" ></script>
+    <script type="text/javascript" src="/js/vendor/moment-with-locales.min.js" ></script>
+    <script type="text/javascript" src="/js/vendor/toastr.js" ></script>
+    <script type="text/javascript" src="/js/vendor/jquery-ui.js" ></script>
+    <script type="text/javascript" src="/js/vendor/jquery.mjs.nestedSortable.js" ></script>
+    <script type="text/javascript" src="/js/vendor/humanize-duration.js" ></script>
+    <script type="text/javascript" src="/js/valamis/backbone.service-custom.js" ></script>
+    <script type="text/javascript" src="/js/valamis/backbone.modal-min.js" ></script>
+    <script type="text/javascript" src="/js/valamis/backbone.marionette.modals-min.js" ></script>
+    <script type="text/javascript" src="/js/valamis/valamis-jq-plugins.js" ></script>
+    <script type="text/javascript" src="/js/valamis/settingsHelper.js" ></script>
+    <script type="text/javascript" src="/js/valamis/jquery.fileupload.js" ></script>
+    <script type="text/javascript" src="/application.js" ></script>
+</head>
+
+<body>
+<!-- must be deleted before included in Liferay >>> -->
+
+<div class="valamis">
+    <section class="portlet" min-width="768px 480px 1024px">
+        <div class="wrapper">
+            <div class="portlet-content">
+                <div class="portlet-content-container">
+                    <div class="portlet-body">
+                        <div id="learningPathsAppRegion" class="val-portlet"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+    Liferay = {
+        ThemeDisplay: {}
+    };
+
+    Liferay.ThemeDisplay.getLanguageId = () => { return "en_US" };
+    Liferay.ThemeDisplay.authToken = 'liferay-authToken';
+    Liferay.ThemeDisplay.getScopeGroupId = () => { return "21289" };
+    Liferay.ThemeDisplay.getPlid = () => { return "11289" };
+    Liferay.ThemeDisplay.getUserId = () => { return "125" };
+
+    var learningPathsAppOptions = {
+        'apiPath': 'http://localhost:8000/delegate/',
+        'resourcePath': 'http://localhost:8000/',
+        'endpoint': {
+            'learningPaths': 'learning-paths/',
+            'courses': 'courses',
+            'liferayActivities': 'activities',
+            'goals': 'goals',
+            'goalGroups': 'goal-groups',
+            'sequencing': 'sequencing/Tincan/'
+        },
+        permissions: {
+            modify: true //eval("{{permissionToModify}}")
+        }
+    };
+</script>
+
+</body>

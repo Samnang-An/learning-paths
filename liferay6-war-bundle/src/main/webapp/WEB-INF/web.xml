@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <listener>
+        <listener-class>com.arcusys.valamis.learningpath.ContextListener</listener-class>
+    </listener>
+
+
+    <servlet>
+        <servlet-name>learning-paths</servlet-name>
+        <servlet-class>com.liferay.portal.kernel.servlet.PortalDelegateServlet</servlet-class>
+        <init-param>
+            <param-name>servlet-class</param-name>
+            <param-value>com.arcusys.valamis.learningpath.servlets.MainServlet</param-value>
+        </init-param>
+        <init-param>
+            <param-name>sub-context</param-name>
+            <param-value>learning-paths</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>learning-paths</servlet-name>
+        <url-pattern>/learning-paths/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

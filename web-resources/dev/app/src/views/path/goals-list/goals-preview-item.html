@@ -1,0 +1,46 @@
+<div class="clearfix list-table-row">
+    <span class="s-6 goal-title {{#isGroup}}group{{/isGroup}}">
+        <div class="ellipsis">
+            {{#isUserMember}}
+                {{#isInProgress}}
+                <span class="val-rounded-div"></span>
+                {{/isInProgress}}
+                {{#isSucceed}}
+                <span class="val-rounded-icon val-icon-checkmark success"></span>
+                {{/isSucceed}}
+                {{#isFailed}}
+                <span class="val-rounded-icon val-icon-exit failed"></span>
+                {{/isFailed}}
+            {{/isUserMember}}
+
+            {{#isGroup}}
+                {{title}}
+            {{/isGroup}}
+            {{^isGroup}}
+                {{#isActivity}}{{language.doLabel}} {{count}}{{/isActivity}}
+                {{title}}
+            {{/isGroup}}
+        </div>
+    </span>
+    <span class="s-2">{{goalTypeLabel}}</span>
+    <span class="s-2">{{timeLimit}}</span>
+    <span class="s-2">
+        {{#isGroup}}
+            {{#isGroupCompletedByCount}}
+            {{language.anyLabel}} {{count}} {{language.ofLabel}} {{childrenNumber}}
+            {{/isGroupCompletedByCount}}
+            {{^isGroupCompletedByCount}}
+            {{language.customLabel}}
+            {{/isGroupCompletedByCount}}
+        {{/isGroup}}
+        {{^isGroup}}
+        {{^isParentCompletedByCount}}
+            {{#optional}}{{language.noLabel}}{{/optional}}
+            {{^optional}}{{language.yesLabel}}{{/optional}}
+        {{/isParentCompletedByCount}}
+        {{/isGroup}}
+    </span>
+</div>
+{{#isGroup}}
+<ul class="js-group-children"></ul>
+{{/isGroup}}

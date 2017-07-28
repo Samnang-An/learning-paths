@@ -1,0 +1,116 @@
+<div class="preview-group clearfix">
+    <div class="div-table val-info-table">
+        <div class="div-row">
+            <div class="div-col name-col">
+                <img src="{{#logoUrl}}{{fullLogoUrl}}{{/logoUrl}}" class="shift-left val-img-logo certificate" />
+            </div>
+            <div class="div-col content-col">
+                <div class="header">{{title}}</div>
+                <div>
+                    {{#published}}{{^activated}}
+                    <span class="val-label inactive">{{language.inactiveStatusLabel}}</span>
+                    &bull;
+                    {{/activated}}{{/published}}
+                    {{#activated}}{{#isMember}}
+                    {{#isInProgress}}<span class="val-label">{{language.inProgressStatusLabel}}</span>{{/isInProgress}}
+                    {{#isSucceed}}<span class="val-label success">{{language.successStatusLabel}}</span>{{/isSucceed}}
+                    {{#isFailed}}<span class="val-label failed">{{language.failedStatusLabel}}</span>{{/isFailed}}
+                    {{#isExpired}}<span class="val-label failed">{{language.expiredStatusLabel}}</span>{{/isExpired}}
+                    {{#isExpiring}}<span class="val-label inprogress">{{language.expiringStatusLabel}}</span>{{/isExpiring}}
+                    &bull;
+                    {{/isMember}}{{/activated}}
+
+                    <span class="js-scope-title"></span>
+                </div>
+                {{#published}}
+                <div class="path-action-buttons">
+                    {{#isMember}}
+                    <button class="button medium primary hidden js-start">
+                        {{language.startLabel}}
+                    </button>
+
+                    {{#canEarnBadge}}
+                    <button class="button medium primary js-earn-badge">
+                        {{language.earnBadgeLabel}}
+                    </button>
+                    {{/canEarnBadge}}
+
+                    <button class="button medium danger js-leave">
+                        {{language.leaveLabel}}
+                    </button>
+                    {{/isMember}}
+                    {{^isMember}}
+                    <button class="button medium primary js-join">
+                        {{language.joinLabel}}
+                    </button>
+                    {{/isMember}}
+                </div>
+                {{/published}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="preview-group description-preview">
+    <div class="subheader">{{language.descriptionLabel}}</div>
+    {{description}}
+
+    <div class="skills-select js-recommendation-skills hidden">
+        <div class="subheader">{{language.prerequisitesLabel}}</div>
+        <div class="dropdown">
+            <div class="js-common-select">
+                <div class="js-recommendation-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-select js-improving-skills hidden">
+        <div class="subheader">{{language.improvementLabel}}</div>
+        <div class="dropdown">
+            <div class="js-common-select">
+                <div class="js-improving-list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pathGoals" class="preview-group path-goals">
+    <div class="js-goals-list">
+        <div class="loading-container js-loading"></div>
+    </div>
+</div>
+
+<div id="pathExtInfo" class="preview-group">
+    <div class="div-table val-info-table">
+        <div class="div-row">
+            <div class="div-col name-col">{{language.validPeriodLabel}}</div>
+            <div class="div-col content-col">
+                <span>
+                {{#validPeriod}}
+                {{validDuration}}
+                {{/validPeriod}}
+                {{^validPeriod}}
+                {{language.permanentLabel}}
+                {{/validPeriod}}
+                </span>
+            </div>
+        </div>
+
+        {{#expiringDuration}}
+        <div class="div-row">
+            <div class="div-col name-col">{{language.expiringPeriodLabel}}</div>
+            <div class="div-col content-col">
+                <span>{{expiringDuration}}</span>
+            </div>
+        </div>
+        {{/expiringDuration}}
+
+        {{#openBadgesEnabled}}
+        <div class="div-row">
+            <div class="div-col name-col">{{language.openBadgesDescriptionLabel}}</div>
+            <div class="div-col content-col">
+                <span>{{openBadgesDescription}}</span>
+            </div>
+        </div>
+        {{/openBadgesEnabled}}
+    </div>
+</div>

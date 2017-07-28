@@ -1,0 +1,36 @@
+{{^available}}
+<div class="tab-header-imitation"></div>
+{{/available}}
+
+{{#available}}
+<div class="bbm-modal__topbar">
+    <button class="button medium simple js-back">
+        <span class="val-icon-arrow-left"></span>
+        {{language.backToLPLabel}}
+    </button>
+    <div class="modal-close val-icon-exit"></div>
+</div>
+{{/available}}
+
+<div class="js-content-layout">
+    <div id="viewToolbar"></div>
+    <div id="viewList" class="val-table-wrapper"></div>
+    <div class="loading-container js-loading-container"></div>
+    <label class="valamis-info-label shifted hidden js-info-label">{{language.emptyListLabel}}</label>
+    <div id="viewPaginatorMore" class="text-center"></div>
+</div>
+
+{{#available}}
+<div class="bbm-modal__bottombar">
+    <button class="button medium primary js-add-selected">
+        {{language.saveLabel}}
+    </button>
+    <button class="button medium simple js-back">
+        {{language.cancelLabel}}
+    </button>
+</div>
+{{/available}}
+
+{{^available}}
+<div id="viewNoMembers" class="hidden js-hint-layout"></div>
+{{/available}}

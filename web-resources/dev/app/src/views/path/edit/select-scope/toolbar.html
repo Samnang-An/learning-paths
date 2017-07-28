@@ -1,0 +1,26 @@
+<div class="filters-row val-row">
+    <div class="side-layout">&nbsp;</div>
+
+    <div class="center-layout text-center">
+        <div class="val-search js-search">
+            <input type="text" placeholder="{{language.searchLabel}}">
+        </div>
+    </div>
+</div>
+<div class="filters-row val-row showing-row">
+    <div class="side-layout">
+        <div id="viewPaginatorShowing" class="display-inline-block"></div>
+    </div>
+    <div class="side-layout text-right">
+        <div class="dropdown js-dropdown shift-right js-sort" data-value="">
+            <button class="button medium simple">
+                <span class="dropdown-text"></span>
+                <span class="val-icon-arrow-down val-icon-right"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li data-value="title" class="selected">{{language.byNameAscLabel}}</li>
+                <li data-value="-title">{{language.byNameDescLabel}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
